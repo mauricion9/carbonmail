@@ -50,14 +50,18 @@ print(f"Total CO2 saved: {stats['co2_saved']} grams")
 
 carbonmail can be configured using environment variables or a configuration file:
 
-```python
-# Using environment variables
+### Using environment variables
+
+```bash
 export CARBONMAIL_SMTP_HOST=smtp.example.com
 export CARBONMAIL_SMTP_PORT=587
 export CARBONMAIL_USERNAME=your_username
 export CARBONMAIL_PASSWORD=your_password
+```
 
-# Or using a config file
+### Using a config file
+
+```python
 client = CarbonMailClient.from_config('config.json')
 ```
 
